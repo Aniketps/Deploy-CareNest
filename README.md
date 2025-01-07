@@ -99,7 +99,7 @@ Read our terms for a smooth and transparent experience.
 
 ---
 
-## **Design Preview - It's just Demo the actual will be same will Real content**
+## **Design Preview - It's just Demo the actual will be same with Real content**
 
 ![Design Preview 1](https://github.com/Aniketps/Project-Images/blob/main/Deploy%20Page%201.png?raw=true)
 ![Design Preview 2](https://github.com/Aniketps/Project-Images/blob/main/Deploy%20Page%205.png?raw=true)
