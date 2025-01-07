@@ -107,4 +107,4 @@ Read our terms for a smooth and transparent experience.
 ![Design Preview 2](https://github.com/Aniketps/Project-Images/blob/main/Deploy%20Page%205.png?raw=true)
 ![Design Preview 3](https://github.com/Aniketps/Project-Images/blob/main/Deploy%20Page%204.png?raw=true)
 ![Design Preview 4](https://github.com/Aniketps/Project-Images/blob/main/Deploy%20Page%202.png?raw=true)
-![Design Preview]([assets/design-preview.jpg](https://github.com/Aniketps/Project-Images/blob/main/Deploy%20Page%203.png))
+![Design Preview 5](https://github.com/Aniketps/Project-Images/blob/main/Deploy%20Page%205.png?raw=true)
