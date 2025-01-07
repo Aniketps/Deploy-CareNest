@@ -103,8 +103,8 @@ Read our terms for a smooth and transparent experience.
 
 ## **Design Preview**
 
-![Design Preview]([assets/design-preview.jpg](https://github.com/Aniketps/Project-Images/blob/main/Deploy%20Page%201.png))
-![Design Preview]([assets/design-preview.jpg](https://github.com/Aniketps/Project-Images/blob/main/Deploy%20Page%205.png))
-![Design Preview]([assets/design-preview.jpg](https://github.com/Aniketps/Project-Images/blob/main/Deploy%20Page%204.png))
-![Design Preview]([assets/design-preview.jpg](https://github.com/Aniketps/Project-Images/blob/main/Deploy%20Page%202.png))
+![Design Preview 1](https://github.com/Aniketps/Project-Images/blob/main/Deploy%20Page%201.png?raw=true)
+![Design Preview 2](https://github.com/Aniketps/Project-Images/blob/main/Deploy%20Page%205.png?raw=true)
+![Design Preview 3](https://github.com/Aniketps/Project-Images/blob/main/Deploy%20Page%204.png?raw=true)
+![Design Preview 4](https://github.com/Aniketps/Project-Images/blob/main/Deploy%20Page%202.png?raw=true)
 ![Design Preview]([assets/design-preview.jpg](https://github.com/Aniketps/Project-Images/blob/main/Deploy%20Page%203.png))
