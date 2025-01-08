@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+    <title>Card Design</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vw;
+            width: 100vw;
+            font-family: 'Roboto Slab';
+        }
+        .card1{
+            margin-top: 50px;
+            height: 750px;
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            padding-top: 200px;
+            align-items: center;
+        }
+        
+        .card1 .firstSubCard{
+            height: 100%;
+            width: 80%;
+            background-image: linear-gradient(180deg, #CDC4E8, #4D378B);
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            box-shadow: 1px 1px 5px 0px black;
+            align-items: start;
+            padding: 30px;
+            border-radius: 60px;
+        }
+        .card1 .secondSubCard{
+            height: 85%;
+            width: 95%;
+            background-color: white;
+            box-shadow: 1px 1px 5px 0px black;
+            border-radius: 60px;
+            justify-content: end;
+            align-items: center;
+            padding-right: 150px;
+            display: flex;
+            flex-direction: row;
+        }
+        .card1 .cardContents{
+            height: 80%;
+            width: 40%;
+        }
+        .card1 .cardContents h1{
+            letter-spacing: 8px;
+            font-size: 40px;
+        }
+        .card1 .cardContents p{
+            padding-top: 5px;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+        .card1 .image{
+            position: absolute;
+            bottom: 10px;
+            left: 320px;
+        }
+        .card1 .image img{
+            height: 750px;
+            width: 350px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .card1{
+                height: 300px;
+                width: 100%;
+                padding-top: 100px;
+            }
+            .card1 .firstSubCard{
+                height: 90%;
+                width: 95%;
+                padding: 8px;
+                border-radius: 25px;
+            }
+            .card1 .secondSubCard{
+                height: 85%;
+                width: 98%;
+                padding-right: 20px;
+                border-radius: 25px;
+            }
+            .card1 .cardContents{
+                height: 80%;
+                width: 42%;
+            }
+            .card1 .cardContents h1{
+                letter-spacing: 2px;
+                font-size: 12px;
+            }
+            .card1 .cardContents p{
+                padding-top: 2px;
+                font-size: 7px;
+                letter-spacing: 0;
+            }
+            .card1 .image{
+                position: absolute;
+                bottom: 10px;
+                left: 50px;
+            }
+            .card1 .image img{
+                height: 280px;
+                width: 125px;
+            }
+        }
+
+        .card2{
+            height: 750px;
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            padding-top: 200px;
+            align-items: center;
+        }
+        
+        .card2 .firstSubCard{
+            height: 100%;
+            width: 80%;
+            background-image: linear-gradient(180deg, #E7E8C4, #C8CC11);
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            box-shadow: 1px 1px 5px 0px black;
+            align-items: start;
+            padding: 30px;
+            border-radius: 60px;
+        }
+        .card2 .secondSubCard{
+            height: 85%;
+            width: 95%;
+            background-color: white;
+            box-shadow: 1px 1px 5px 0px black;
+            border-radius: 60px;
+            justify-content: start;
+            align-items: center;
+            padding-left: 100px;
+            display: flex;
+            flex-direction: row;
+        }
+        .card2 .cardContents{
+            height: 80%;
+            width: 40%;
+        }
+        .card2 .cardContents h1{
+            letter-spacing: 8px;
+            font-size: 40px;
+        }
+        .card2 .cardContents p{
+            padding-top: 5px;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+        .card2 .image{
+            position: absolute;
+            bottom: 10px;
+            right: 320px;
+        }
+        .card2 .image img{
+            height: 750px;
+            width: 350px;
+        }
+        .heading2{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .heading2 h1{
+            font-size: 30px;
+            text-align: center;
+            font-weight: bolder;
+            letter-spacing: 10px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .card2{
+                height: 300px;
+                width: 100%;
+                padding-top: 100px;
+            }
+            .card2 .firstSubCard{
+                height: 90%;
+                width: 95%;
+                padding: 8px;
+                border-radius: 25px;
+            }
+            .card2 .secondSubCard{
+                height: 85%;
+                width: 98%;
+                padding-left: 20px;
+                border-radius: 25px;
+            }
+            .card2 .cardContents{
+                height: 80%;
+                width: 40%;
+            }
+            .card2 .cardContents h1{
+                letter-spacing: 2px;
+                font-size: 12px;
+            }
+            .card2 .cardContents p{
+                padding-top: 2px;
+                font-size: 7px;
+                letter-spacing: 0;
+            }
+            .card2 .image{
+                position: absolute;
+                bottom: 10px;
+                right: 50px;
+            }
+            .card2 .image img{
+                height: 280px;
+                width: 125px;
+            }
+            .heading2{
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            .heading2 h1{
+                font-size: 10px;
+                font-weight: bolder;
+                letter-spacing: 4px;
+            }
+        }
+        .header{
+            height: 70px;
+            z-index: 5;
+            background-color: white;
+            width: 100%;
+            position: fixed;
+            border: 1px solid black;
+        }
+        .introduction{
+            padding-top: 90px;
+            height: 850px;
+            justify-content: center;
+            align-items: center;
+            padding: 0 200px 0 200px;
+            width: 100%;
+            display: flex;
+            margin: 0;
+            flex-direction: column;
+        }
+        @media only screen and (max-width: 768px){
+            .introduction{
+                padding: 15px;
+                height: 450px;
+                width: 100%;
+            }
+        }
+        .contents{
+            width: 100%;
+            display: flex;
+            height: 60%;
+            flex-direction: row;
+        }
+        .part1{
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+        .part1 h1{
+            font-weight: 900;
+            font-size: 45px;
+            letter-spacing: 15px;
+        }
+        .part1 p{
+            padding-top: 10px;
+            font-size: 39px;
+            letter-spacing: 2px;
+        }
+        .part2{
+            width: 40%;
+            position: relative;
+        }
+        .part2 #firstImage{
+            height: 470px;
+            width: 220px;
+            position: absolute;
+            bottom: -50px;
+            left: 50px;
+        }
+        .part2 #secondImage{
+            height: 390px;
+            width: 180px;
+            position: absolute;
+            bottom: -50px;
+            left: 160px;
+        }
+        .part2 #thirdImage{
+            height: 320px;
+            width: 150px;
+            position: absolute;
+            bottom: -50px;
+            left: 250px;
+        }
+
+        @media only screen and (max-width: 768px){
+            .part1 h1{
+                font-weight: 900;
+                font-size: 18px;
+                letter-spacing: 5px;
+            }
+            .part1 p{
+                padding-top: 4px;
+                font-size: 12px;
+                font-weight: lighter;
+                letter-spacing: 0px;
+            }
+            .part2 #firstImage{
+                height: 220px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100px;
+            }
+            .part2 #secondImage{
+                height: 190px;
+                position: absolute;
+                bottom: 0;
+                left: 30px;
+                width: 90px;
+            }
+            .part2 #thirdImage{
+                height: 150px;
+                position: absolute;
+                bottom: 0;
+                left: 65px;
+                width: 67px;
+            }
+        }
+        .downloadlinks{
+            display: flex;
+            flex-direction: row;
+            height: 70px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+        }
+        .download{
+            display: flex;
+            flex-direction: row;
+            height: 90%;
+            border-radius: 50px;
+            background-color: #D9D9D9;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            gap: 5px;
+        }
+        .download img{
+            height: 80%;
+        }
+        .download button{
+            border: none;
+            background-color: transparent;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .getStarted{
+            display: flex;
+            flex-direction: row;
+            height: 90%;
+            border-radius: 50px;
+            background-color: #292CCF;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            gap: 2px;
+        }
+        .getStarted button{
+            border: none;
+            background-color: transparent;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+        @media only screen and (max-width: 768px){
+            .downloadlinks{
+                height: 60px;
+                width: 100%;
+                gap: 20px;
+                margin: 0;
+            }
+            .download{
+                height: 75%;
+                border-radius: 20px;
+                width: 50%;
+                gap: 2px;
+            }
+            .download img{
+                height: 50%;
+            }
+            .download button{
+                font-size: 12px;
+            }
+            .getStarted{
+                height: 75%;
+                border-radius: 20px;
+                width: 50%;
+                gap: 2px;
+            }
+            .getStarted button{
+                font-size: 12px;
+            }   
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+
+    </div>
+    <div class="introduction">
+        <div class="contents">
+            <div class="part1">
+                <h1>CARENEST</h1>
+                <p>Connecting you to dedicated staff for every need, effortlessly. A platform built for trust and convenience!</p>
+            </div>
+            <div class="part2">
+                <img id="firstImage" src="./Deploy Images/Home.png" alt="">
+                <img id="secondImage" src="./Deploy Images/HireStaff.png" alt="">
+                <img id="thirdImage" src="./Deploy Images/UserNotification.png" alt="">
+            </div>
+        </div>
+        <div class="downloadlinks">
+            <div class="download">
+                <img src="./Deploy Images/DownloadIcon.png" alt="">
+                <button>Donwload For Android</button>
+            </div>
+            <div class="getStarted">
+                <button>Get Started for Free</button>
+            </div>
+        </div>
+    </div>
+    <div class="heading2">
+        <h1>Let’s dive in to Application</h1>
+    </div>
+    <div class="card1">
+        <div class="firstSubCard">
+            <div class="secondSubCard">
+                <div class="image">
+                    <img src="../Deploy Images/Home.png" alt="">
+                </div>
+                <div class="cardContents">
+                    <h1>Home</h1>
+                    <p>Beautiful and User Friendly Home Page without any complications and Confusions, All you got the thing you have to do is scroll through Professions and select the one you need. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card2">
+        <div class="firstSubCard">
+            <div class="secondSubCard">
+                <div class="image">
+                    <img src="../Deploy Images/HireStaff.png" alt="">
+                </div>
+                <div class="cardContents">
+                    <h1>Hire Staff</h1>
+                    <p>Scroll through staff and select the one you need and then the next process is to hire the staff for work, All you have to do is Select Base of Work, Date, Time of work and Address where you need staff.
+                        Make payment that will give Us guaranty you really need helping hand if somehow staff reject to work your money will be refunded on the instead of time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card1">
+        <div class="firstSubCard">
+            <div class="secondSubCard">
+                <div class="image">
+                    <img src="../Deploy Images/UserNotification.png" alt="">
+                </div>
+                <div class="cardContents">
+                    <h1>Notifications</h1>
+                    <p>When you hire any staff you will get pop-up on screen and you request will be managed for records in notifications along with location if you shared. Once staff accept work OTP will be generated in notification below the Request, After Staff complete the work give the OTP to Staff as a confirmation of work.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card2">
+        <div class="firstSubCard">
+            <div class="secondSubCard">
+                <div class="image">
+                    <img src="../Deploy Images/Deals.png" alt="">
+                </div>
+                <div class="cardContents">
+                    <h1>Deals</h1>
+                    <p>After staff complete their work and enter OTP the record will be generated and stored in Deals History for Future same kind of work if you need as well as proof of work. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card1">
+        <div class="firstSubCard">
+            <div class="secondSubCard">
+                <div class="image">
+                    <img src="../Deploy Images/SelectProfession.png" alt="">
+                </div>
+                <div class="cardContents">
+                    <h1>Ratings</h1>
+                    <p>All staffs given with the rating from User o the bases of their work performance they did in their past works. Users can go through staff rating to check how well staff performance is.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card2">
+        <div class="firstSubCard">
+            <div class="secondSubCard">
+                <div class="image">
+                    <img src="../Deploy Images/Profile.png" alt="">
+                </div>
+                <div class="cardContents">
+                    <h1>User Profile</h1>
+                    <p>Simple and User friendly profile where you can change your profile photo, Your current location and Mobile number.
+                        Why we need Number & Email?
+                        If something happens to your account we will send you an SMS or Email regarding to issues.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card1">
+        <div class="firstSubCard">
+            <div class="secondSubCard">
+                <div class="image">
+                    <img src="../Deploy Images/Map.png" alt="">
+                </div>
+                <div class="cardContents">
+                    <h1>Map</h1>
+                    <p>On top of the Location if you want to see which staff is near to you then you can go through Map, Where you can see all the nearest available staff.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

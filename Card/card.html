@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+    <title>Card Design</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vw;
+            width: 100vw;
+            font-family: 'Roboto Slab';
+        }
+        .card1{
+            margin-top: 50px;
+            height: 750px;
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            padding-top: 200px;
+            align-items: center;
+        }
+        
+        .card1 .firstSubCard{
+            height: 100%;
+            width: 80%;
+            background-image: linear-gradient(180deg, #CDC4E8, #4D378B);
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            box-shadow: 1px 1px 5px 0px black;
+            align-items: start;
+            padding: 30px;
+            border-radius: 60px;
+        }
+        .card1 .secondSubCard{
+            height: 85%;
+            width: 95%;
+            background-color: white;
+            box-shadow: 1px 1px 5px 0px black;
+            border-radius: 60px;
+            justify-content: end;
+            align-items: center;
+            padding-right: 150px;
+            display: flex;
+            flex-direction: row;
+        }
+        .card1 .cardContents{
+            height: 80%;
+            width: 40%;
+        }
+        .card1 .cardContents h1{
+            letter-spacing: 8px;
+            font-size: 40px;
+        }
+        .card1 .cardContents p{
+            padding-top: 5px;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+        .card1 .image{
+            position: absolute;
+            bottom: 10px;
+            left: 320px;
+        }
+        .card1 .image img{
+            height: 750px;
+            width: 350px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .card1{
+                height: 300px;
+                width: 100%;
+                padding-top: 100px;
+            }
+            .card1 .firstSubCard{
+                height: 90%;
+                width: 95%;
+                padding: 8px;
+                border-radius: 25px;
+            }
+            .card1 .secondSubCard{
+                height: 85%;
+                width: 98%;
+                padding-right: 20px;
+                border-radius: 25px;
+            }
+            .card1 .cardContents{
+                height: 80%;
+                width: 42%;
+            }
+            .card1 .cardContents h1{
+                letter-spacing: 2px;
+                font-size: 12px;
+            }
+            .card1 .cardContents p{
+                padding-top: 2px;
+                font-size: 7px;
+                letter-spacing: 0;
+            }
+            .card1 .image{
+                position: absolute;
+                bottom: 10px;
+                left: 50px;
+            }
+            .card1 .image img{
+                height: 280px;
+                width: 125px;
+            }
+        }
+
+        .card2{
+            height: 750px;
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            padding-top: 200px;
+            align-items: center;
+        }
+        
+        .card2 .firstSubCard{
+            height: 100%;
+            width: 80%;
+            background-image: linear-gradient(180deg, #E7E8C4, #C8CC11);
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            box-shadow: 1px 1px 5px 0px black;
+            align-items: start;
+            padding: 30px;
+            border-radius: 60px;
+        }
+        .card2 .secondSubCard{
+            height: 85%;
+            width: 95%;
+            background-color: white;
+            box-shadow: 1px 1px 5px 0px black;
+            border-radius: 60px;
+            justify-content: start;
+            align-items: center;
+            padding-left: 100px;
+            display: flex;
+            flex-direction: row;
+        }
+        .card2 .cardContents{
+            height: 80%;
+            width: 40%;
+        }
+        .card2 .cardContents h1{
+            letter-spacing: 8px;
+            font-size: 40px;
+        }
+        .card2 .cardContents p{
+            padding-top: 5px;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+        .card2 .image{
+            position: absolute;
+            bottom: 10px;
+            right: 320px;
+        }
+        .card2 .image img{
+            height: 750px;
+            width: 350px;
+        }
+        .heading2{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .heading2 h1{
+            font-size: 30px;
+            text-align: center;
+            font-weight: bolder;
+            letter-spacing: 10px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .card2{
+                height: 300px;
+                width: 100%;
+                padding-top: 100px;
+            }
+            .card2 .firstSubCard{
+                height: 90%;
+                width: 95%;
+                padding: 8px;
+                border-radius: 25px;
+            }
+            .card2 .secondSubCard{
+                height: 85%;
+                width: 98%;
+                padding-left: 20px;
+                border-radius: 25px;
+            }
+            .card2 .cardContents{
+                height: 80%;
+                width: 40%;
+            }
+            .card2 .cardContents h1{
+                letter-spacing: 2px;
+                font-size: 12px;
+            }
+            .card2 .cardContents p{
+                padding-top: 2px;
+                font-size: 7px;
+                letter-spacing: 0;
+            }
+            .card2 .image{
+                position: absolute;
+                bottom: 10px;
+                right: 50px;
+            }
+            .card2 .image img{
+                height: 280px;
+                width: 125px;
+            }
+            .heading2{
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            .heading2 h1{
+                font-size: 10px;
+                font-weight: bolder;
+                letter-spacing: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="heading2">
+        <h1>Let’s Follow me for User Account</h1>
+    </div>
+    <div class="card1">
+        <div class="firstSubCard">
+            <div class="secondSubCard">
+                <div class="image">
+                    <img src="../Deploy Images/UserRegistration.png" alt="">
+                </div>
+                <div class="cardContents">
+                    <h1>User Register</h1>
+                    <p>First of all you must create an user account, Enter the necessary information (Remember name cant be changed so enter the right one). After you create account you will get an verification email to verify your the right User. Verify your account by clicking on email Link.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card2">
+        <div class="firstSubCard">
+            <div class="secondSubCard">
+                <div class="image">
+                    <img src="../Deploy Images/UserLogin.png" alt="">
+                </div>
+                <div class="cardContents">
+                    <h1>User Login</h1>
+                    <p>If your having any suggestions or any complaints just enter it in new feedback and we will check out for it as soon as possible and we ensure that we will take action on it.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="heading2">
+        <h1>Let's Follow me for Staff Account</h1>
+    </div>
+    <div class="card1">
+        <div class="firstSubCard">
+            <div class="secondSubCard">
+                <div class="image">
+                    <img src="../Deploy Images/StaffRegistration.png" alt="">
+                </div>
+                <div class="cardContents">
+                    <h1>Staff Registration</h1>
+                    <p>To become part of our community you need to create your staff account by entering necessary information on register page.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card2">
+        <div class="firstSubCard">
+            <div class="secondSubCard">
+                <div class="image">
+                    <img src="../Deploy Images/StaffDetails.png" alt="">
+                </div>
+                <div class="cardContents">
+                    <h1>Staff Additional Details</h1>
+                    <p>Enter All the necessary extra details about your profession, Use all the real information.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card1">
+        <div class="firstSubCard">
+            <div class="secondSubCard">
+                <div class="image">
+                    <img src="../Deploy Images/SelectProfession.png" alt="">
+                </div>
+                <div class="cardContents">
+                    <h1>Staff Profession</h1>
+                    <p>Select your profession by clicking the drop down menu, Once you create staff account by default User will also be created so your can login as a User as well.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card2">
+        <div class="firstSubCard">
+            <div class="secondSubCard">
+                <div class="image">
+                    <img src="../Deploy Images/StaffLogin.png" alt="">
+                </div>
+                <div class="cardContents">
+                    <h1>Staff Login</h1>
+                    <p>Use your staff account data your entered while creating account to login, Before that make sure you already have verified your account, After registration process we send as email to verify your account.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="heading2">
+        <h1>Staff can still change some of their information</h1>
+    </div>
+    <div class="card1">
+        <div class="firstSubCard">
+            <div class="secondSubCard">
+                <div class="image">
+                    <img src="../Deploy Images/PersonalChange.png" alt="">
+                </div>
+                <div class="cardContents">
+                    <h1>Personal Information</h1>
+                    <p>Staff can still many of their information from personal information change the icon is located in profile</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card2">
+        <div class="firstSubCard">
+            <div class="secondSubCard">
+                <div class="image">
+                    <img src="../Deploy Images/ContactChange.png" alt="">
+                </div>
+                <div class="cardContents">
+                    <h1>Contact Information</h1>
+                    <p>Staff can change their contact information through this way,  and the icon is located in profile of staff.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
