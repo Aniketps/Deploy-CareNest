@@ -192,69 +192,10 @@
             letter-spacing: 10px;
         }
 
-        @media only screen and (max-width: 768px) {
-            .card2{
-                height: 300px;
-                width: 100%;
-                padding-top: 100px;
-            }
-            .card2 .firstSubCard{
-                height: 90%;
-                width: 95%;
-                padding: 8px;
-                border-radius: 25px;
-            }
-            .card2 .secondSubCard{
-                height: 85%;
-                width: 98%;
-                padding-left: 20px;
-                border-radius: 25px;
-            }
-            .card2 .cardContents{
-                height: 80%;
-                width: 40%;
-            }
-            .card2 .cardContents h1{
-                letter-spacing: 2px;
-                font-size: 12px;
-            }
-            .card2 .cardContents p{
-                padding-top: 2px;
-                font-size: 7px;
-                letter-spacing: 0;
-            }
-            .card2 .image{
-                position: absolute;
-                bottom: 10px;
-                right: 50px;
-            }
-            .card2 .image img{
-                height: 280px;
-                width: 125px;
-            }
-            .heading2{
-                padding-top: 20px;
-                padding-bottom: 20px;
-            }
-            .heading2 h1{
-                font-size: 10px;
-                font-weight: bolder;
-                letter-spacing: 4px;
-            }
-        }
-        .header{
-            height: 70px;
-            z-index: 5;
-            background-color: white;
-            width: 100%;
-            position: fixed;
-            border: 1px solid black;
-        }
         .introduction{
-            padding-top: 90px;
             height: 850px;
             align-items: center;
-            padding: 0 200px 0 200px;
+            padding: 120px 200px 0 200px;
             width: 100%;
             display: flex;
             justify-content: end;
@@ -514,11 +455,174 @@
                 width: 170px;
             }
         }
+        @media only screen and (max-width: 768px) {
+            .card2{
+                height: 300px;
+                width: 100%;
+                padding-top: 100px;
+            }
+            .card2 .firstSubCard{
+                height: 90%;
+                width: 95%;
+                padding: 8px;
+                border-radius: 25px;
+            }
+            .card2 .secondSubCard{
+                height: 85%;
+                width: 98%;
+                padding-left: 20px;
+                border-radius: 25px;
+            }
+            .card2 .cardContents{
+                height: 80%;
+                width: 40%;
+            }
+            .card2 .cardContents h1{
+                letter-spacing: 2px;
+                font-size: 12px;
+            }
+            .card2 .cardContents p{
+                padding-top: 2px;
+                font-size: 7px;
+                letter-spacing: 0;
+            }
+            .card2 .image{
+                position: absolute;
+                bottom: 10px;
+                right: 50px;
+            }
+            .card2 .image img{
+                height: 280px;
+                width: 125px;
+            }
+            .heading2{
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            .heading2 h1{
+                font-size: 10px;
+                font-weight: bolder;
+                letter-spacing: 4px;
+            }
+        }
+        .logo img{
+            height: 70px;
+            width: 70px;
+        }
+        .links{
+            font-size: 20px;
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+        }
+        .links a{
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+        }
+        .header{
+            height: 100px;
+            z-index: 5;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #FFFCC9;
+            width: 100%;
+            position: fixed;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.203);
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.18);
+        }
+        .downloads{
+            height: 70px;
+            width: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .donwload1{
+            display: flex;
+            flex-direction: row;
+            height: 80%;
+            border-radius: 50px;
+            background-color: #D9D9D9;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            border: 1px solid black;
+        }
+        .donwload1 img{
+            height: 80%;
+            padding-bottom: 2px;
+        }
+        .donwload1 button{
+            border: none;
+            background-color: transparent;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .getStarted1{
+            display: flex;
+            flex-direction: row;
+            height: 90%;
+            border-radius: 50px;
+            background-color: #292CCF;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            gap: 2px;
+        }
+        .getStarted1 button{
+            border: none;
+            background-color: transparent;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
+
+        @media only screen and (max-width: 768px){
+            .downloads{
+                display: none;
+            }
+            .header{
+                height: 50px;
+            }
+
+            .links{
+                font-size: 9px;
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+            }
+            .logo img{
+                height: 40px;
+                width: 40px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="header">
-
+        <div class="logo">
+            <img src="/Final_Logo.png" alt="">
+        </div>
+        <div class="links">
+            <a href="#">HOME</a>
+            <a href="#">KEY NAVIGATIONS</a>
+            <a href="#">DEVELOPERS</a>
+            <a href="#">SUPPORT CENTER</a>
+        </div>
+        <div class="downloads">
+            <div class="donwload1">
+                <img src="./Deploy Images/DownloadIcon.png" alt="">
+                <button>DOWNLOAD NOW</button>
+            </div>
+            <div class="getStarted1">
+                <button>Get Started for Free</button>
+            </div>
+        </div>
     </div>
     <div class="introduction">
         <div class="contents">
