@@ -253,18 +253,18 @@
         .introduction{
             padding-top: 90px;
             height: 850px;
-            justify-content: center;
             align-items: center;
             padding: 0 200px 0 200px;
             width: 100%;
             display: flex;
+            justify-content: end;
             margin: 0;
             flex-direction: column;
         }
         @media only screen and (max-width: 768px){
             .introduction{
                 padding: 15px;
-                height: 450px;
+                height: 400px;
                 width: 100%;
             }
         }
@@ -409,9 +409,9 @@
                 margin: 0;
             }
             .download{
-                height: 75%;
+                height: 60%;
                 border-radius: 20px;
-                width: 50%;
+                width: 55%;
                 gap: 2px;
             }
             .download img{
@@ -421,9 +421,9 @@
                 font-size: 12px;
             }
             .getStarted{
-                height: 75%;
+                height: 60%;
                 border-radius: 20px;
-                width: 50%;
+                width: 45%;
                 gap: 2px;
             }
             .getStarted button{
@@ -431,6 +431,89 @@
             }   
         }
 
+        .reason{
+            min-height: 1200px;
+            width: 100%;
+            padding: 50px;
+            background-color: #2C2549;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .whycards{
+            height: 95%;
+            width: 90%;
+            margin: auto;
+            display: flex;
+            padding: 50px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 100px;
+            justify-content: center;
+        }
+        .whycard{
+            min-height: 320px;
+            width: 500px;
+            background-color: white;
+            border-radius: 40px;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .whycard h1{
+            text-align: center;
+            color: #FF2A2A;
+            font-size: 28px;
+        }
+        .whycard p{
+            font-size: 24px;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: #151313;
+        }
+        .whycards img{
+            height: 200px;
+            width: 230px;
+        }
+        .reason >h1{
+            color: white;
+            letter-spacing: 10px;
+        }
+        @media only screen and (max-width: 768px){
+            .reason{
+                padding: 0px;
+                padding-bottom: 50px;
+                padding-top: 20px;
+            }
+            .reason >h1{
+                font-size: 20px;
+                text-align: center;
+                padding-bottom: 20px;
+            }
+            .whycard h1{
+                font-size: 22px;
+            }
+            .whycards{
+                padding: 0px;
+                gap: 20px;
+            }
+            .whycard p{
+                font-size: 16px;
+            }
+            .whycard{
+                padding: 10px;
+                border-radius: 30px;
+                width: 400px;
+            }
+            .whycards img{
+                height: 150px;
+                width: 170px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -459,6 +542,54 @@
             </div>
         </div>
     </div>
+
+    <div class="reason">
+        <h1>WHY CARENEST?</h1>
+        <div class="whycards">
+            <div class="whycard">
+                <img src="./Why Carenest/Rating And Reviews.png" alt="">
+                <h1>RATINGS & REVIEWS</h1>
+                <p>Clients can rate and review staff display average ratings on profiles.</p>
+            </div>
+            <div class="whycard">
+                <img src="./Why Carenest/Real Time Booking.png" alt="">
+                <h1>REAL-TIME BOOKING</h1>
+                <p>Options for hourly or daily care bookings.</p>
+            </div>
+            <div class="whycard">
+                <img src="./Why Carenest/Staff Management.png" alt="">
+                <h1>STAFF MANAGEMENT</h1>
+                <p>Staff onboarding with document verification.</p>
+            </div>
+            <div class="whycard">
+                <img src="./Why Carenest/Live Tracking.png" alt="">
+                <h1>LIVE TRACKING</h1>
+                <p>Real-time location tracking of nearby staff</p>
+            </div>
+            <div class="whycard">
+                <img src="./Why Carenest/Role Based Registration.png" alt="">
+                <h1>ROLE BASED REGISTRATION</h1>
+                <p>Separate registration for staff (medical/non-medical) and clients with relevant details.</p>
+            </div>
+            <div class="whycard">
+                <img src="./Why Carenest/Notifications.png" alt="">
+                <h1>NOTIFICATIONS</h1>
+                <p>Alerts for bookings, reminders, payments, and promotions</p>
+            </div>
+            <div class="whycard">
+                <img src="./Why Carenest/Payment Integration.png" alt="">
+                <h1>PAYMENT INTEGRATION</h1>
+                <p>Secure payments via credit/debit, UPI, and net banking.
+                    partial payments available</p>
+            </div>
+            <div class="whycard">
+                <img src="./Why Carenest/Help Center.png" alt="">
+                <h1>HELP CENTER</h1>
+                <p>Report issues, complaints assigned for review, with follow-up calls.</p>
+            </div>
+        </div>
+    </div>
+
     <div class="heading2">
         <h1>Let’s dive in to Application</h1>
     </div>
