@@ -524,7 +524,7 @@
         }
         .header{
             height: 100px;
-            z-index: 5;
+            z-index: 15;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
@@ -613,6 +613,92 @@
                 height: 10px;
             }
         }
+
+        .KeyNavigations{
+            position: fixed;
+            z-index: 10;
+            margin-top: 50px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .innerKeyNavigation{
+            height: 250px;
+            margin-top: 50px;
+            width: 80%;
+            display: none;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.24);
+        }
+        .innerKeyNavigation1{
+            display: none;
+            margin-top: 50px;
+            height: 250px;
+            width: 80%;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.24);
+        }
+        .keyLinks{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top: 20px;
+        }
+        .keyLinks h1{
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+        .innerKeyNavigation > h1{
+            font-weight: 400;
+            font-size: 24px;
+            letter-spacing: 2px;
+        }
+        .innerKeyNavigation p{
+            font-weight: lighter;
+        }
+        .innerKeyNavigation1 > h1{
+            font-weight: 400;
+            font-size: 24px;
+            letter-spacing: 2px;
+        }
+        .innerKeyNavigation1 p{
+            font-weight: lighter;
+        }
+        .divider{
+            height: 1px;
+            margin-top: 20px;
+            background-color: black;
+            width: 100%;
+        }
+        
+        #keyNavigations:hover + .innerKeyNavigation {
+            display: block;
+        }
+
+        #developer:hover + .innerKeyNavigation1 {
+            display: block;
+        }
+        @media only screen and (max-width: 768px){
+            .KeyNavigations{
+                margin-top: 0px;
+            }
+            .innerKeyNavigation{
+                height: 400px;
+            }
+            .innerKeyNavigation1{
+                display: none;
+                min-height: 400px;
+            }
+            .keyLinks{
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -622,20 +708,66 @@
         </div>
         <div class="links">
             <a target="_blank" href="./index.html">HOME</a>
-            <a href="#">KEY NAVIGATIONS</a>
-            <a href="#">DEVELOPERS</a>
+            <a id="keyNavigations">KEY NAVIGATIONS</a>
+            <a id="developer">DEVELOPERS</a>
             <a target="_blank" href="./supportcenter.html">SUPPORT CENTER</a>
         </div>
         <div class="downloads">
             <div class="donwload1">
                 <img src="./Deploy Images/DownloadIcon.png" alt="">
-                <button>DOWNLOAD NOW</button>
+                <button><a style="text-decoration: none; color:black" href="./Application/CareNest_0.0.1.apk" download>DOWNLOAD NOW</a></button>
             </div>
             <div class="getStarted1">
                 <button type="button"><a style="color: white; text-decoration:none" href="./getstarted.html">Get Started for Free</a></button>
             </div>
         </div>
     </div>
+
+    <div class="KeyNavigations">
+        <div class="innerKeyNavigation">
+            <h1>KEY NAVIGATIONS</h1>
+            <div class="divider"></div>
+            <div class="keyLinks">
+                <div class="keyNav">
+                    <h1>SERVICES</h1>
+                    <p>Here are the our available services</p>
+                </div>
+                <div class="keyNav">
+                    <h1><a style="color: black; text-decoration:none" href="./getstarted.html">CAREERS</a></h1>
+                    <p>We would love to have you in our team</p>
+                </div>
+                <div class="keyNav">
+                    <h1><a style="text-decoration: none; color:black" href="mailto:aniketnik01@gmail.com?">CONTACTS</a></h1>
+                    <p>If you have any query hit a email to us</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="KeyNavigations">
+        <div class="innerKeyNavigation1">
+            <h1>DEVELOPERS</h1>
+            <div class="divider"></div>
+            <div class="keyLinks">
+                <div class="keyNav">
+                    <h1><a style="color: black; text-decoration:none" href="https://github.com/Aniketps" target="_blank">ANIKET PARDESHI</a></h1>
+                    <p>Team Co-ordinator/Leader</p>
+                </div>
+                <div class="keyNav">
+                    <h1>SHWETA SHEWALE</h1>
+                    <p>UI Designer</p>
+                </div>
+                <div class="keyNav">
+                    <h1>PRAJWAL PATIL</h1>
+                    <p>Tester</p>
+                </div>
+                <div class="keyNav">
+                    <h1>SANDESH THITTE</h1>
+                    <p>Database Management</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="introduction">
         <div class="contents">
             <div class="part1">
@@ -651,7 +783,7 @@
         <div class="downloadlinks">
             <div class="download">
                 <img src="./Deploy Images/DownloadIcon.png" alt="">
-                <button>Donwload For Android</button>
+                <button><a style="text-decoration: none; color:black" href="./Application/CareNest_0.0.1.apk" download>Donwload For Android</a></button>
             </div>
             <div class="getStarted">
                 <button><a style="color: white; text-decoration:none" href="./getstarted.html">Get Started for Free</a></button>
@@ -777,5 +909,56 @@
             </div>
         </div>
     </div>
+
+    <script>
+        const keyNavigations = document.getElementById('keyNavigations');
+        const innerKeyNavigation = document.querySelector('.innerKeyNavigation');
+        const innerKeyNavigation1 = document.querySelector('.innerKeyNavigation1');
+        const developer = document.getElementById('developer');
+
+        keyNavigations.addEventListener('mouseenter', () => {
+            if(innerKeyNavigation1.style.display === 'block'){
+                innerKeyNavigation1.style.display = 'none';
+            }
+            if (innerKeyNavigation.style.display === 'block') {
+                innerKeyNavigation.style.display = 'none';
+            } else {
+                innerKeyNavigation.style.display = 'block';
+            }
+        });
+
+
+        developer.addEventListener('mouseenter', () => {
+            if(innerKeyNavigation.style.display === 'block'){
+                innerKeyNavigation.style.display = 'none';
+            }
+            if (innerKeyNavigation1.style.display === 'block') {
+                innerKeyNavigation1.style.display = 'none';
+            } else {
+                innerKeyNavigation1.style.display = 'block';
+            }
+        });
+
+
+        keyNavigations.addEventListener('click', () => {
+            if (innerKeyNavigation.style.display === 'block') {
+                innerKeyNavigation.style.display = 'none';
+            } else {
+                innerKeyNavigation.style.display = 'block';
+                innerKeyNavigation1.style.display = 'none';
+            }
+        });
+
+        developer.addEventListener('click', () => {
+            if (innerKeyNavigation1.style.display === 'block') {
+                innerKeyNavigation1.style.display = 'none';
+            } else {
+                innerKeyNavigation1.style.display = 'block';
+                innerKeyNavigation.style.display = 'none';
+            }
+        });
+
+    </script>
+
 </body>
 </html>
