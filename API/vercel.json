@@ -18,11 +18,11 @@
       {
         "src": "index.html",
         "use": "@vercel/static"
-      }
+      },
       {
         "src" : "/payment-key",
         "dest" : "API/api/keys.py"
-    }
+      }
     ]
   }
   
