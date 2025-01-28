@@ -1,0 +1,14 @@
+{
+    "builds" : [
+        {
+            "src" : "/api/keys.py",
+            "user" : "vercel/python"
+        }
+    ],
+    "routes" : [
+        {
+            "src" : "/payment-key",
+            "dest" : "/api/jeys.py"
+        }
+    ]
+}
