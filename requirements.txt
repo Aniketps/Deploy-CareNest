@@ -1,0 +1,3 @@
+flask
+razorpay
+requests
