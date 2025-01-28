@@ -1,14 +1,28 @@
 {
-    "builds" : [
-        {
-            "src" : "/api/keys.py",
-            "user" : "vercel/python"
-        }
+    "version": 2,
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "API/api/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
     ],
-    "routes" : [
-        {
-            "src" : "/payment-key",
-            "dest" : "/api/jeys.py"
-        }
+    "builds": [
+      {
+        "src": "API/api/*.py",
+        "use": "@vercel/python"
+      },
+      {
+        "src": "index.html",
+        "use": "@vercel/static"
+      }
+      {
+        "src" : "/payment-key",
+        "dest" : "API/api/keys.py"
+    }
     ]
-}
+  }
+  
