@@ -1,28 +1,27 @@
 {
-    "version": 2,
-    "routes": [
-      {
-        "src": "/api/(.*)",
-        "dest": "API/api/$1"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/index.html"
-      }
-    ],
-    "builds": [
-      {
-        "src": "API/api/*.py",
-        "use": "@vercel/python"
-      },
-      {
-        "src": "index.html",
-        "use": "@vercel/static"
-      },
-      {
-        "src" : "/payment-key",
-        "dest" : "API/api/keys.py"
-      }
-    ]
-  }
-  
+  "version": 2,
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "API/api/$1"
+    },
+    {
+      "src": "/payment-key",
+      "dest": "API/api/keys.py"  // This is your custom route
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "builds": [
+    {
+      "src": "API/api/*.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
+  ]
+}
