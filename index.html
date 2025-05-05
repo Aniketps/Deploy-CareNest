@@ -706,22 +706,40 @@
         }
     </style>
     <script>
-        fetch('./Application/')
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(html, 'text/html');
-            const links = Array.from(doc.querySelectorAll('a'));
-            const apkLink = links.find(link => link.href.endsWith('.apk'));
-            if (apkLink) {
-              document.getElementById('downloadBtn').onclick = () => {
-                window.location.href = apkLink.getAttribute('href');
-              };
-            } else {
-              console.error('No APK found in folder.');
-            }
-          });
-      </script>
+        function downloadLatestAPK() {
+          fetch('./Application/')
+            .then(response => response.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const doc = parser.parseFromString(html, 'text/html');
+              const links = doc.querySelectorAll('a');
+              let apkLink = null;
+        
+              links.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href && href.endsWith('.apk')) {
+                  apkLink = href.startsWith('http') ? href : './Application/' + href;
+                }
+              });
+        
+              if (apkLink) {
+                // Trigger download
+                const a = document.createElement('a');
+                a.href = apkLink;
+                a.download = '';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+              } else {
+                alert("No APK file found in the Application folder.");
+              }
+            })
+            .catch(err => {
+              console.error('Error fetching Application folder:', err);
+              alert("Could not load the APK file.");
+            });
+        }
+        </script>        
 </head>
 <body>
     <div class="header">
@@ -737,7 +755,7 @@
         <div class="downloads">
             <div class="donwload1">
                 <img src="./Deploy Images/DownloadIcon.png" alt="">
-                <button><a style="text-decoration: none; color:black" id="downloadBtn">DOWNLOAD NOW</a></button>
+                <button><a style="text-decoration: none; color:black" onclick="downloadLatestAPK()">DOWNLOAD NOW</a></button>
             </div>
             <div class="getStarted1">
                 <button><a target="_blank" style="color: white; text-decoration:none" href="./getstarted.html">Get Started for Free</a></button>
